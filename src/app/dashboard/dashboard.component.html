@@ -1,0 +1,6 @@
+
+<md-grid-list cols="4" rowHeight="1:1">
+  <md-grid-tile *ngFor="let movie of movies | async">
+      <img src="{{ movie.thumbnail }}" (click)='playMovie(movie)'>
+  </md-grid-tile>
+</md-grid-list>

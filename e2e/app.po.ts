@@ -5,7 +5,7 @@ export class KukulekuPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getNofMdGridTiles() {
+    return element.all(by.css('md-grid-tile')).count();
   }
 }

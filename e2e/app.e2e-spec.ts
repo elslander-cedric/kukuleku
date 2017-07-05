@@ -7,8 +7,8 @@ describe('kukuleku App', () => {
     page = new KukulekuPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display 13 md-grid-tile elements', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getNofMdGridTiles()).toEqual(13);
   });
 });
